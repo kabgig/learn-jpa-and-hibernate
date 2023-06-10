@@ -1,14 +1,14 @@
-package com.kabgig.springboot.learnjpaandhibernate.Course.jdbc;
+package com.kabgig.springboot.learnjpaandhibernate.Course;
 
-import com.kabgig.springboot.learnjpaandhibernate.Course.Course;
+import com.kabgig.springboot.learnjpaandhibernate.Course.jpa.CourseJpaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CourseJdbcCommandLineRunner implements CommandLineRunner {
+public class CourseCommandLineRunner implements CommandLineRunner {
     @Autowired
-    private CourseJdbcRepository repository;
+    private CourseJpaRepository repository;
 
     @Override
     public void run(String... args) throws Exception {
